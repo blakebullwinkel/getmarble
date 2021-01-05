@@ -2,6 +2,11 @@ body {
     font-family: 'Nunito', sans-serif;
     background-image: url("static/bg.gif");
     background-size: cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -15,19 +20,19 @@ a {
 }
 
 h1 {
-    font-size: 110px;
+    font-size: 100px;
     color: #F5F5F5;
     margin-bottom: 0;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: #F5F5F5;
 }
 
 h3 {
-    font-size: 15px;
-    color: #F5F5F5;
+    font-size: 20px;
+    color: #c5c4c4;
 }
 
 p {
@@ -35,32 +40,59 @@ p {
     color: grey;
 }
 
-.container {
+.wrapper {
     display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.introTextContainer {
+    max-width: 630px;
+    margin-bottom: 65px;
+}
+
+.screenshotContainer {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
 }
 
 .bannerText {
-    flex-direction: column;
-    margin-top: 10px;
+    max-width: 500px;
+}
+
+.finalBannerText {
+    max-width: 800px;
+    text-align: center;
 }
 
 .phone {
-    max-width: 380px;
-    margin-right: 50px;
+    max-height: 710px;
+    padding: 40px;
+}
+
+.profileScreen {
+    max-width: 450px;
+}
+
+.logo {
+    margin-top: 100px;
+    margin-bottom: 45px;
+    max-width: 200px;
 }
 
 @media screen and (max-width: 575px) {
-    header {
-        flex-direction: column;
-    }
+    
 
 }
 
 @media screen and (max-width: 1000px) {
-    .projectContainer {
-        flex-direction: column;
-    }
+    
 
 }
